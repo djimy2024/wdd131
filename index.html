@@ -1,10 +1,59 @@
 <!DOCTYPE html>
-<html lang="en-US">
- <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Djimy Francillon | WDD 131</title>
- </head>
- <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Djimy Francillon">
+    <title>WDD 131 - Dynamic Web Fundamentals - Djimy Francillon</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h2>WDD 131: Dynamic Web Fundamentals - Djimy Francillon</h2>
+        <br/>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                    <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section class="card1">
+            <h3>About Me</h3><br>
+        <img src="images/me.jpg" alt="My Pictures" width="100" class="img1">
+       
+            <p>I’m Djimy Francillon and I live in Pétion Ville, Haiti. I’m currently a student in software development at Brigham Young University, I had my first bachelor’s in chemistry engineer at the University of the state of Haiti. I'm working as a data analyst for more than 5 years in a international company that has one of his building in my country.</p>
+            <br><h4> Petion Ville, Haiti</h4><br>
+            <p>The Republic of Haiti occupies the western part of the island of Haiti and the Dominican Republic its eastern part. It has an area of ​​28,676 km2. The Republic of Haiti measures approximately 230 km from north to south and 290 km from east to west. It is located between the degrees 18 ° 02 'and 20 ° 06 'north latitude; 71 ° 41 'and 74 ° 29 'west longitude. It is surrounded on three of its sides by the sea. It is bathed, to the north, by the Atlantic Ocean, to the south by the Antilles Sea (or Caribbean), to the west by the eastern end of the Bartlett Trough. Haiti is recognized as the first black people to have conquered its independence on January 1, 1804.</p>
+            <br><img src="images/Haiti's flag.png" alt="Flag" width="50" class="img2">
+        </section>
+
+        <section class="card1">
+            <h3>Web Dev Ressources</h3><br>
+            <ul class="card2">
+                <li><a href="https://www.w3schools.com/">W3 school</a></li>
+                <li><a href="https://www.codecademy.com/"> Codecademy</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+                <li><a href="https://www.freecodecamp.org/">FreeCodeCamp</a></li>
+                <li><a href="https://github.com/">GitHub</a></li>
+                <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Djimy Francillon, Petion ville,Haiti</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>

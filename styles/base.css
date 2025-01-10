@@ -1,0 +1,134 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    
+}
+
+/* Set a background color for the page and font family */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f9; /* Light background */
+    color: #333333; /* Dark text color for readability */
+    line-height: 1.6;
+    
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    flex-direction: column;  /* Aligns header elements in columns */
+    padding: 0.1px;
+    border: 5px;
+    margin: 5px;
+    background-color: rgb(70, 121, 180);
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+}
+
+/* Style for h3 title */
+h3 {
+    background-color: rgb(70, 121, 180); /* Background color of h3 */
+    color: white; /* Text color */
+    padding: 5px; /* Add some padding around the text */
+    border-radius: 1px; /* Rounded corners for the title */
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    padding: 0.2px;
+    width: 50%; /* Set the stroke width */
+    margin: 0 auto; 
+    border-bottom: 0.2px solid #333; /* Thin border at bottom (dark gray) */
+}
+
+.navigation {
+	list-style: none;
+	display: flex;
+    justify-content: space-around;
+	align-items: center;
+    width: 100%; 
+	max-width: 100vw;
+    background-color: #333333;
+    padding: 10px;
+}
+.navigation li {
+	flex: 1 1 auto; 
+}
+.navigation a {
+	display: flex;
+    justify-content: space-around;
+	color: #eee;
+	padding: 1rem;
+	text-align: center;
+    text-decoration: none; /* Remove underlines from links */
+    padding: 10px 20px; /* Added padding around links */
+    flex-grow: 1; /* Links expand to occupy space */
+}
+
+.navigation a:hover {
+	background-color: #555555; /* Changes background color on hover */
+}
+
+
+/* Main Section */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+  .img1 {
+    width: 150px;
+    height: auto;
+    float: right;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* mg2 with width 150px */
+}
+
+.img2 {
+    width: 10%;  /* Img2 with width 10% */
+    height: auto;
+}
+
+/*card1*/
+.card1 {
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+/*card2*/
+.card2 {
+    background-color: #fff;
+    padding: 5rem;
+    text-align: center;
+}
+
+/* Footer */  
+  footer{
+    background-color: rgb(70, 121, 180);
+    display: grid;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 5px;
+    border: 5px;
+    margin: 5px;
+    color: #fff;
+  }
+  
+  
+
+
+
