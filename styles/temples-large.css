@@ -1,0 +1,38 @@
+/* temples-large.css */
+@media (min-width: 740px) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav ul {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+
+     /* Hamburger button styling */
+     .hamburger {
+        display: flex;
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: white;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
+    
+    nav ul {
+        display: block;
+    }
+
+    figure {
+        width: 30%;
+    }
+}
+
+    
