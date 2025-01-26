@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Information</title>
+        <meta name="description" content="Media query learning activity example page.">
+        <meta name="author" content="Djimy Francillon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Haiti</h1>
+</header>
+<div class="container">
+   
+<section class="hero">
+    <picture>
+      <source srcset="Haiti's nature.webp" media="(max-width: 600px)">
+      <source srcset="Haiti's nature.webp" media="(max-width: 1024px)">
+      <img src="images/pexels-tessa-m-2148132609-29933587.webp" alt="Weather Image">
+    </picture>
+  </section>
+  <div class="block">
+<section class="country-info">
+    <div class="country">
+        <h2>Data</h2>
+        <p>Area: 27,750 sq Km<br> Population: 12,000,000<br>Capital: Port-au-Prince<br>Languages: Creole and French<br>Currency: Gourdes<br>Time Zone: GMT-5<br> Calling Code: +509<br>Internet TLD: .ht</p>
+    </div>
+  </section>
+   <!-- Weather Section -->
+   <section class="weather-info">
+    <div class="weather">
+    <h3>Weather</h3>
+    <p> Temperature: 33°C<br>Conditions: Partly Cloudy<br>Wind: 7 mph <br>Wind  Chill: 27.5°C</p>
+   </div>
+</section>
+</div>
+</div>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Djimy Francillon, Petion ville, Haiti</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

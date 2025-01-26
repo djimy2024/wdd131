@@ -1,0 +1,71 @@
+
+  /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light background for readability */
+}
+
+/* Header Styles */
+header {
+  background-color: #333; /* Dark background for header */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden; /* Ensure the image fits the container */
+}
+
+/* Picture Element Styling (for responsive images) */
+picture {
+  width: 100%; /* Ensure the picture element takes up full width */
+}
+
+.hero img {
+  width: 100%; /* Make sure the image stretches to fit its container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container, cropping the image as necessary */
+}
+
+/* Main Section */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Mobile View */
+@media (max-width: 499px) {
+  .hero img {
+      width: 100%; /* Full width for smaller screens */
+      height: auto;
+  }
+}
+
+/* Medium Screen View (500px - 999px) */
+@media (min-width: 500px) and (max-width: 999px) {
+  .hero img {
+      width: 100%; /* Full width for medium screens */
+      height: auto;
+  }
+}
+
+/* Large Screen View (1000px and above) */
+@media (min-width: 1000px) {
+  .hero img {
+      width: 100%; /* Full width for larger screens */
+      height: auto;
+  }
+}
+
+  

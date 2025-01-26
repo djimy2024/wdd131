@@ -1,0 +1,51 @@
+/* Mobile View (max-width: 600px) */
+@media (max-width: 600px) {
+    .hero{
+        height: 250px; /* Adjust height for mobile */
+        display: flex;
+    }
+    
+    .container{
+        display: grid;
+        flex-direction: row; /* Stacks children vertically */
+        align-items: center; /* Aligns children to the left (or center, depending on the design) */
+        margin: 0;
+        padding: 10px;
+        grid-template-columns: 1fr;
+        width: 60%;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: end; /* Center them horizontally */
+            
+        
+    }
+    
+    .block{
+        display: flex;
+        margin: 0;
+        padding: 10px;
+        grid-template-columns: 1fr;
+        width: 60%;
+    }
+     
+
+    .weather-info, .country-info {
+        position: absolute;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+/* Tablet and Larger Devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .hero {
+        height: 350px; /* Adjust height for tablet */
+    }
+
+    .country-info, .weather-info {
+        margin: 15px 0;
+        padding: 15px;
+    }
+}
