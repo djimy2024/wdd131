@@ -1,0 +1,17 @@
+
+/* temples-large.css */
+@media (min-width: 740px) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    #temple-cards-container {
+      grid-template-columns: 1fr; /* 1 column on smaller screens */
+    }
+  }
+
+    

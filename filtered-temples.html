@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+     <!-- Head Section -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Picture Album Enhancement</title>
+        <meta name="description" content="Media query learning activity example page.">
+        <meta name="author" content="Djimy Francillon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/filtered-temples.css">
+        <link rel="stylesheet" href="styles/filtered-temples-large.css">
+        <script src="scripts/filtered-temples.js" defer></script>
+      </head>
+      <body>
+
+        <!-- Header Section -->
+        <header>
+           <h1 class="handler">Temple Album</h1>
+      
+           <button id="hamburger">☰</button>
+
+<!-- Filter Menu -->
+<div id="filter-menu" class="filter-menu">
+  <button id="filter-old">Old</button>
+  <button id="filter-new">New</button>
+  <button id="filter-large">Large</button>
+  <button id="filter-small">Small</button>
+  <button id="filter-home">Home</button>
+</div>
+
+<!-- Container for the temple cards -->
+<div id="temple-container"></div>
+        </header>
+    
+        <!-- Main Section -->
+        <main>
+            <h2>Home</h2>
+           <div id="temple-card"></div>
+           <div id="temple-cards-container"></div>
+
+        </main>
+    
+        <!-- Footer Section -->
+        <footer>
+            <p><strong>&copy; <span id="currentyear"></span> Djimy Francillon, Petion ville, Haiti</strong></p>
+            <p id="lastModified"></p>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+    </html>
