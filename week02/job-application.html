@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Job Application</title>
+    <link rel="stylesheet" href="styles/job-application.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Analyst Job Application</h1>
+        
+        <form id="job-application-form">
+            <!-- Personal Information -->
+            <section>
+                <h2>Personal Information</h2>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+                
+                <label for="linkedin">LinkedIn Profile:</label>
+                <input type="url" id="linkedin" name="linkedin">
+            </section>
+
+            <!-- Position Information -->
+            <section>
+                <h2>Position Information</h2>
+                <label for="desired-salary">Desired Salary:</label>
+                <input type="text" id="desired-salary" name="desired-salary">
+                
+                <label for="available-start">Available Start Date:</label>
+                <input type="date" id="available-start" name="available-start">
+                
+                <label for="work-availability">Available Work Hours:</label>
+                <input type="text" id="work-availability" name="work-availability" placeholder="e.g., Full-time, Part-time">
+            </section>
+
+            <!-- Education -->
+            <section>
+                <h2>Education</h2>
+                <label for="degree">Highest Degree Earned:</label>
+                <input type="text" id="degree" name="degree" required>
+                
+                <label for="school-name">School Name:</label>
+                <input type="text" id="school-name" name="school-name" required>
+                
+                <label for="graduation-year">Year of Graduation:</label>
+                <input type="number" id="graduation-year" name="graduation-year" required>
+            </section>
+
+            <!-- Work Experience -->
+            <section>
+                <h2>Work Experience</h2>
+                <label for="previous-job">Previous Job Title:</label>
+                <input type="text" id="previous-job" name="previous-job">
+                
+                <label for="company-name">Company Name:</label>
+                <input type="text" id="company-name" name="company-name">
+                
+                <label for="employment-dates">Dates of Employment:</label>
+                <input type="text" id="employment-dates" name="employment-dates" placeholder="e.g., Jan 2020 - Present">
+                
+                <label for="job-responsibilities">Job Responsibilities:</label>
+                <textarea id="job-responsibilities" name="job-responsibilities" rows="4"></textarea>
+            </section>
+
+            <!-- Skills and Qualifications -->
+            <section>
+                <h2>Skills and Qualifications</h2>
+                <label for="technical-skills">Technical Skills (e.g., Python, SQL):</label>
+                <input type="text" id="technical-skills" name="technical-skills">
+                
+                <label for="tools">Tools Familiar With (e.g., Excel, PowerBI, Tableau):</label>
+                <input type="text" id="tools" name="tools">
+                
+                <label for="languages">Languages (e.g., Python, R):</label>
+                <input type="text" id="languages" name="languages">
+                
+                <label for="certifications">Certifications (e.g., Google Data Analytics):</label>
+                <input type="text" id="certifications" name="certifications">
+            </section>
+
+            <!-- References -->
+            <section>
+                <h2>References</h2>
+                <label for="reference-name">Reference Name:</label>
+                <input type="text" id="reference-name" name="reference-name">
+                
+                <label for="reference-contact">Reference Contact Info:</label>
+                <input type="text" id="reference-contact" name="reference-contact">
+            </section>
+
+            <!-- Additional Information -->
+            <section>
+                <h2>Additional Information</h2>
+                <label for="cover-letter">Cover Letter (Optional):</label>
+                <textarea id="cover-letter" name="cover-letter" rows="4" placeholder="Why do you want to work as a Data Analyst?"></textarea>
+            </section>
+
+            <!-- Acknowledgment -->
+            <section>
+                <h2>Acknowledgments</h2>
+                <label>
+                    <input type="checkbox" id="acknowledgment" required>
+                    I confirm that all information provided is accurate.
+                </label>
+            </section>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
