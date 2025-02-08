@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Confirmation</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="scripts/form.js">
+</head>
+<body>
+  <header>
+    <p>Thank You for Your Review!</p>
+  </header>
+
+  <main>
+    <!-- Display the review completion counter -->
+    <p id="reviewCounter">Reviews Completed</p>
+    <p>Your review has been successfully submitted.</p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Djimy Francillon, Petion ville, Haiti</p>
+        <p id="lastModified"></p>
+  </footer>
+
+  <script src="script.js">
+    // Function to increment review counter
+function incrementReviewCounter() {
+  // Check if 'reviewCount' already exists in localStorage
+  let reviewCount = localStorage.getItem('reviewCount');
+  
+  // If it doesn't exist, initialize it to 0
+  if (!reviewCount) {
+    reviewCount = 0;
+  }
+
+  // Increment the counter by 1
+  reviewCount = parseInt(reviewCount) + 1;
+
+  // Store the updated counter back in localStorage
+  localStorage.setItem('reviewCount', reviewCount);
+
+  // Update the display of review count
+  document.getElementById('reviewCounter').textContent = `Reviews Completed: ${reviewCount}`;
+}
+
+// Call the function when the page is loaded
+window.onload = incrementReviewCounter;
+
+  </script> 
+</body>
+</html>
