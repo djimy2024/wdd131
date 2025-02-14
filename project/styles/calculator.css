@@ -16,7 +16,6 @@ body {
       color: white;
       text-align: center;
   }
- 
 
 /* Calculator */
 .calculator {
@@ -28,6 +27,7 @@ body {
     border: 2px solid #333;
     border-radius: 10px;
     background-color: powderblue;
+    animation: fade 5s;
 }
 
 /* Display */
@@ -63,6 +63,14 @@ body {
     background-color: #ddd;
 }
 
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 /* Footer */  
 footer{
     background-color: #00008b;

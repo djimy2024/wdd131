@@ -41,6 +41,8 @@ function calculate() {
     try {
         // Evaluate the expression using the eval function
         display.value = eval(display.value);
+        // Store the result in localStorage
+        localStorage.setItem('lastResult', display.value); // Save last result
     } catch (error) {
         display.value = 'Error';
     }
@@ -118,3 +120,20 @@ buttons.forEach(row => {
         buttonsContainer.appendChild(button);
     });
 });
+
+// Function to check for a saved result and display it on page load
+window.onload = function() {
+    const savedResult = localStorage.getItem('lastResult');
+    if (savedResult) {
+        display.value = savedResult; // Set the last result on the display
+    }
+}
+
+// Save calculation history
+function saveHistory(result) {
+    let history = JSON.parse(localStorage.getItem('history')) || [];
+    history.unshift(result);  // Add the new result at the start
+    if (history.length > 5) history.pop();  // Keep only the last 5 results
+    localStorage.setItem('history', JSON.stringify(history));
+}
+saveHistory(display.value);
