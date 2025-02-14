@@ -1,25 +1,27 @@
   /* Mobile View */
   @media (max-width: 600px) {
     .calculator {
-        width: 90%;
-        margin: 0px;
+        width: 80%;
+        margin: 20px;
         padding: 15px;
     }
 
     #display {
+        width: 90%;
         font-size: 20px;
         height: 50px;
-    }
-
-    .buttons {
-        grid-template-columns: repeat(4, 1fr);
+        background-color: #f7f7f7;
     }
 
     .btn {
         padding: 15px;
         font-size: 18px;
     }
-
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
     /* Hide specific buttons in mobile view */
     .hide-mobile {
         display: none;
@@ -37,30 +39,28 @@
     }
 
     #display {
+        width: 94%;
         font-size: 28px;
         height: 70px;
+        background-color: #f7f7f7; 
     }
 
     .buttons {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto auto; /* Two rows */
+      width: 95%;
+      padding: 10px;
+      font-size: 2em;
+      background-color: #f7f7f7;
     }
-
+    
     .btn {
         padding: 20px;
         font-size: 22px;
     }
 
-     /* Numbers in the top row */
-     .numbers {
-        grid-row: 1; /* Put number buttons in the first row */
+    .btn-equal {
+        grid-row: span 2; /* Makes the "=" button span across 2  rows */
     }
-
-     /* Operators in the bottom row */
-     .operators {
-        grid-row: 2; /* Put operator buttons in the second row */
-    }
-
+    
     /* Show specific buttons in large view */
     .show-large {
         display: block;

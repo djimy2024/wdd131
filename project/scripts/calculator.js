@@ -5,15 +5,14 @@ document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
 
 
- // Create the buttons dynamically using JavaScript
- const buttons = [
-    ['(', ')', '√', 'x²', '9'],
-    ['8', '7', '-', '⌫', '6'],
-    ['5', '4', '/', '3', '2'],
-    ['1', '+/-', '*', '0', 'C'],
-    ['%', '.', '+', '=']
+  // Create the buttons.
+  const buttons = [
+    ['7', '8', '9', '/', '('],      
+    ['4', '5', '6', '*', ')'],     
+    ['1', '2', '3', '-', '+/-'],      
+    ['0', '.', 'C', '+', '='],      
+    ['√', '%', 'x²', '⌫']        
 ];
-const operatorButtons = ['C', '⌫', '%', '√', 'x²', '+/-'];
 const buttonsContainer = document.getElementById('buttons');
 const display = document.getElementById('display');
 
@@ -72,7 +71,7 @@ function toggleSign() {
 
 // Function to handle modulo operation
 function modulo() {
-    display.value += '%';
+    display.value = display.value / 100;
 }
 
 // Dynamically create buttons and add event listeners
@@ -115,10 +114,7 @@ buttons.forEach(row => {
             // For numbers and operators
             button.addEventListener('click', () => appendNumber(buttonText));
         }
-
+        document.querySelector('.calculator').appendChild(button);
         buttonsContainer.appendChild(button);
     });
 });
-
-
-
